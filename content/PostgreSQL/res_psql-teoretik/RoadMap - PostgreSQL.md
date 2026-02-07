@@ -40,7 +40,7 @@ title: RoadMap - PostgreSQL
 				- [[postgresql.conf default major-18]] - default конфиг [[configiration, PGDATA#^reboot-conf-psql|Применение изменений]]
 				- [[postgresql.conf|postgresql.conf info]] - Подробное описание настроек
 				- [[configiration, PGDATA#^psql-conf-confd-files|/etc/psql/.../conf.d]] - Доп. файлы конфигурации. Приоритеты файлов конфигурации
-				- [[configiration, PGDATA#^conf-psql-postgresqlauto-ALTER-SYSTEM-command|/var/lib/psql/.../postgresql.auto.conf]] - postgresql.auto.conf - ==Это **рекомендуемый способ** изменения глобальных параметров в production.== Так же меняется через SQL-команду ==ALTER SYSTEM==
+				- [[configiration, PGDATA#^conf-psql-postgresqlauto-ALTER-SYSTEM-command|/var/lib/psql/.../postgresql.auto.conf]] - postgresql.auto.conf -Это **рекомендуемый способ** изменения глобальных параметров в production. Так же меняется через SQL-команду ALTER SYSTEM
 		- [[configiration, PGDATA#^conf-cluster-start-conf|/etc/psql/.../start.conf]] - Файл содержит **ровно одно слово** — режим автозапуска: auto
 4. Принципы и Механизмы
 	- [[Принцип работы - WAL]] +
