@@ -3,20 +3,20 @@ title: Главная
 ---
 
 СОДЕРЖАНИЕ
-/		[[psql - Install|Установка]] +
-/	АРХИТЕКТУРА PostgreSQL ([[Структурная схема psql.drawio]])
-/       [[Общая информация]] +
-/		[[Postmaster process|Postmaster process]] +
-/		[[Backend processes|Backend processes]] +
-/		[[Shared memory]] +
-/			Subprocesses Postmaster:
-/               [[Checkpointer|Checkpointer]] +
-/				[[Background writer|Background writer]] +
-/				[[WAL writer|WAL writer]] +
-/				[[WAL archiver|WAL archiver]] +
-/				[[WAL sender|WAL sender]] +
-/				[[Syslogger|Syslogger]] +
-/				[[Autovacuum launcher - Autovacuum worker|Autovacuum launcher - Autovacuum worker]] +
+[[psql - Install|Установка]] +
+АРХИТЕКТУРА PostgreSQL ([[Структурная схема psql.drawio]])
+[[Общая информация]]
+[[Postmaster process|Postmaster process]]
+[[Backend processes|Backend processes]]
+[[Shared memory]]
+Subprocesses Postmaster:
+ [[Checkpointer|Checkpointer]] +
+[[Background writer|Background writer]] +
+[[WAL writer|WAL writer]] +
+[[WAL archiver|WAL archiver]] +
+[[WAL sender|WAL sender]] +
+[[Syslogger|Syslogger]] +
+[[Autovacuum launcher - Autovacuum worker|Autovacuum launcher - Autovacuum worker]] +
 /					[[Autovacuum launcher - Autovacuum worker#^psql-autovacuum-worker|Autovacuum worker]] +
 /				[[Startup process - WAL receiver (standby)|Startup process]] (standby) +
 /					[[Startup process - WAL receiver (standby)#^psql-WAL-receiver|WAL receiver]] (standby) +
