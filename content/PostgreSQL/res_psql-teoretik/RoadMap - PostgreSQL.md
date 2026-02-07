@@ -2,7 +2,8 @@
 title: RoadMap - PostgreSQL
 ---
 
-СОДЕРЖАНИЕ
+## СОДЕРЖАНИЕ
+
 1. [[psql - Install|Установка]] +
 2. АРХИТЕКТУРА PostgreSQL ([[Структурная схема psql.drawio]])
 	- [[Общая информация]] +
@@ -27,9 +28,9 @@ title: RoadMap - PostgreSQL
 		- Two-phase commit (2PC) recovery processes (условно)
 		- Parallel worker (условный процесс)
 3. Структура каталогов кластера (etc, PGDATA) + ^back-content-configiration-PGDATA
-		- [[configiration, PGDATA#^conf-cluster-psql|Каталог конфигурация кластера /etc/postgresql]] - Древо файлов и каталогов, их применение и особенности
-		- [[configiration, PGDATA#^pgdata-cluster-cotalog-psql|Каталог данных кластера PGDATA]] - Древо файлов и каталогов
-		- [[configiration, PGDATA#^other-cotalog-psql|Другие каталоги]] - Файлы с PID процессом и др.
+	- [[configiration, PGDATA#^conf-cluster-psql|Каталог конфигурация кластера /etc/postgresql]] - Древо файлов и каталогов, их применение и особенности
+	- [[configiration, PGDATA#^pgdata-cluster-cotalog-psql|Каталог данных кластера PGDATA]] - Древо файлов и каталогов
+	- [[configiration, PGDATA#^other-cotalog-psql|Другие каталоги]] - Файлы с PID процессом и др.
 	- Файлы конфигурации:
 		- [[configiration, PGDATA#^conf-cluster-environment|/etc/psql/.../environment]] - это **переменные окружения**, которые устанавливаются **для процесса `postmaster` и всех его дочерних процессов** (backend’ов, фоновых процессов и т.д.).
 		- [[configiration, PGDATA#^conf-cluster-pgctl-conf|/etc/psql/.../pg_ctl.conf]] - альтернатива `systemd`
@@ -47,7 +48,7 @@ title: RoadMap - PostgreSQL
 	- [[Принцип работы - VACUUM, autoVACUUM]] +
 	- [[Принцип работы - ANALYZE (pg_statistic)]] +
 	- [[Принцип работы - Planner (планировщик)]] +
-	Логические схемы простых операций (Select, Insert, Update):
+	- Логические схемы простых операций (Select, Insert, Update):
 		- Select ([[Структурная схема psql.drawio|см. на схеме]]) +
 		- Insert ([[Структурная схема psql.drawio|см. на схеме]]) +
 		- Update ([[Структурная схема psql.drawio|см. на схеме]]) +
@@ -66,7 +67,7 @@ title: RoadMap - PostgreSQL
 	- [[Архивация WAL, Point-in-Time Recovery (PITR)]] +
 		- [[Архивация WAL, Point-in-Time Recovery (PITR)#^psql-PITR-WALarchiveRestore|Восстановление из Archive-WAL до определенной точки с помощью PITR]] +
 		- [[Скрипт автоматического backup и восстановление PITR]]
-	Утилиты: 
+	- Утилиты: 
 		- [[pg_basebackup]]  — Применение. Физический backup +
 		- [[pg_dump, pg_dumpall, pg_restore]] — Применение. Логический backup. Частичный backup +
 		- pg_upgrade — для быстрого обновления кластера между [[Общая информация#^psql-major-minor-ver|major-версиями]]
@@ -96,7 +97,7 @@ title: RoadMap - PostgreSQL
 [[Дополнительная информация psql - Ссылки на ресурсы]]
 
 ---
-# Задачки
+## Задачки
 
 - [ ] [[pg_basebackup#^psql-pgbasebackup-coldbackup|pg_basebackup - Сделать холодный физический backup кластера]] +
 - [ ] [[pg_basebackup#^psql-pgbasebackup-straightStandby|pg_basebackup - Развернуть Standby используя]] +
@@ -126,7 +127,7 @@ title: RoadMap - PostgreSQL
 
 --- 
 
-# Ответы на вопросы
+## Ответы на вопросы
 
 - [[DML#^psql-DML-hit-ratio|Коэффициент попаданий в кэш]]
 - Сколько сейчас [[DML#^psql-DML-ActiveSessions|активных сеансов]] к базе и к кластеру в общем
